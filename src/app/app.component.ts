@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular Ejemplo JOHN';
 
+
+
 /*    template: `
   <div>
     <h1>
