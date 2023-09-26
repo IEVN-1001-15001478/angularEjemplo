@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-6">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Numero1</label>
+            <input type="text" [(ngModel)]='num1' class="form-control" name="num1" placeholder="Numero1">
+        </div>
+        <div class="mb-3">
+            <label for="num2" class="form-label">Numero2</label>
+            <input type="text" [(ngModel)]="num2" class="form-control" name="num2" placeholder="Numero2">
+        </div>
+        
+          <td></td>
+        
+
+        <!-- <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label (click)="sumar()" class="btn btn-outline-primary" for="btnradio1">Sumar</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label (click)="restar()" class="btn btn-outline-primary" for="btnradio2">Restar</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label (click)="multiplicar()" class="btn btn-outline-primary" for="btnradio3">Multiplicar</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label (click)="dividir()" class="btn btn-outline-primary" for="btnradio4">Dividir</label>
+          </div> -->
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="sumar">
+            <label  class="form-check-label" for="flexRadioDefault1" value="SUMAR">
+              SUMAR
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="restar">
+            <label  class="form-check-label" for="flexRadioDefault2" value="RESTAR">
+              RESTAR
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="multiplicar">
+            <label  class="form-check-label" for="flexRadioDefault3" value="MULTIPLICAR">
+              MULTIPLICAR
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="dividir">
+            <label  class="form-check-label" for="flexRadioDefault4" value="DIVIDIR">
+              DIVIDIR
+            </label>
+          </div>
+
+        <div class="mb-3">
+            <button (click)="calcular()" class="btn btn-primary">Calcular</button>
+            
+        </div>
+        <div class="col-6">
+            <h2>Resultado: {{resultado}}</h2>
+        </div>
+        
+    </div>
+</div>
